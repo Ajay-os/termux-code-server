@@ -4,7 +4,6 @@
   "repository": "https://github.com/Ajay-o-s/termux-code-server",
   "logo": "https://raw.githubusercontent.com/Ajay-o-s/Darshana/main/server/image/dd.jpg",
   "keywords": ["termux","terminal","web","www"],
-  "stack": "container",
    "env": {
         "PASSWORD": {
             "description": "Enter password for open webpage",
