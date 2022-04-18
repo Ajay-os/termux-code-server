@@ -2,4 +2,4 @@ build:
   docker:
      termux : Dockerfile
 run:
-   termux: install.sh
+   termux: bash install.sh
