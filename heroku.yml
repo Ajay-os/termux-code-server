@@ -1,0 +1,5 @@
+build:
+  docker:
+     termux : Dockerfile
+run:
+   termux: install.sh
