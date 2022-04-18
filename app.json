@@ -18,6 +18,7 @@
     "addons": [{
       "plan": "heroku-postgresql"
     }],
-    "buildpacks": [
-        { "url": "https://github.com/Ajay-o-s/heroku-buildpack-apt.git" } ]
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
 }
