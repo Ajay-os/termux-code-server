@@ -2,4 +2,4 @@ build:
   docker:
      termux : Dockerfile
 run:
-   termux: wget https://raw.githubusercontent.com/Ajay-o-s/termux-code-server/main/install.sh && bash install.sh
+   termux: wget https://raw.githubusercontent.com/Ajay-o-s/termux-code-server/try/install.sh && bash install.sh
