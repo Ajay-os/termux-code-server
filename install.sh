@@ -8,8 +8,8 @@ echo "starting bash ubuntu.sh"
 bash ubuntu.sh 
 echo "starting ./start-ubuntu.sh"
 ./start-ubuntu.sh
-echo "starting https://github.com/coder/code-server/releases/download/v4.3.0/code-server_4.3.0_amd64.deb"
-wget https://github.com/coder/code-server/releases/download/v4.3.0/code-server_4.3.0_amd64.deb
+echo "starting https://github.com/coder/code-server/releases/download/v4.3.0/code-server_4.3.0_arm64.deb"
+wget https://github.com/coder/code-server/releases/download/v4.3.0/code-server_4.3.0_arm64.deb
 echo "starting apt install ./code-server_4.3.0_amd64.deb"
 apt install ./code-server_4.3.0_amd64.deb
 echo "starting export PASSWORD="1234567890" "
