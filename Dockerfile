@@ -14,7 +14,9 @@ ENV LANG en_US.UTF-8
 RUN apt update
 RUN apt upgrade -y
 RUN apt install git wget curl -y
-#\ apt -yq upgrade && \ apt install -yq sudo lsb-release software-properties-common && adduser --disabled-password --shell /bin/bash --gecos "" builder && \ echo "builder ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/builder && \ chmod 0440 /etc/sudoers.d/builder && \ su - builder -c /tmp/setup-ubuntu.sh && \ su - builder -c /tmp/setup-android-sdk.sh && \ apt remove -yq --autoremove lsb-release software-properties-common && \ apt clean &&  rm -rf /var/lib/apt/lists/* &&  cd /home/builder/lib/android-ndk/ && rm -Rf sources/cxx-stl/system && cd /home/builder/lib/android-sdk/tools && \ rm -Rf emulator* lib* proguard templates
+RUN apt install wget openssl-tool proot utils -y
+RUN 
+#\ apt -yq upgrade && \ apt install -yq hash -r lsb-release software-properties-common && adduser --disabled-password --shell /bin/bash --gecos "" builder && \ echo "builder ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/builder && \ chmod 0440 /etc/sudoers.d/builder && \ su - builder -c /tmp/setup-ubuntu.sh && \ su - builder -c /tmp/setup-android-sdk.sh && \ apt remove -yq --autoremove lsb-release software-properties-common && \ apt clean &&  rm -rf /var/lib/apt/lists/* &&  cd /home/builder/lib/android-ndk/ && rm -Rf sources/cxx-stl/system && cd /home/builder/lib/android-sdk/tools && \ rm -Rf emulator* lib* proguard templates
 
  # Switch User
 USER builder:builder
