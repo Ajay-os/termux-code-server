@@ -1,24 +1,10 @@
 {
-"name": "termux",
+  "name": "termux",
   "description": "opening termux in web",
   "repository": "https://github.com/Ajay-o-s/termux-code-server",
   "logo": "https://raw.githubusercontent.com/Ajay-o-s/Darshana/main/server/image/dd.jpg",
   "keywords": ["termux","terminal","web","www"],
-   "env": {
-        "PASSWORD": {
-            "description": "Enter password for open webpage",
-            "required": true
-        },
-        "NAME": {
-            "description": "Add name ",
-            "required": false,
-            "value": "true"
-        }
-    },
-    "addons": [{
-      "plan": "heroku-postgresql"
-    }],
-    "buildpacks": [{
-      "url": "heroku-community/apt"
-      }]
+  "stack": "container",
+  "addons": [{"plan": "heroku-postgresql"}],
+   "buildpacks": [{"url": "heroku-community/apt"}]
 }
