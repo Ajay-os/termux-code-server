@@ -1,5 +1,0 @@
-build:
-  docker:
-     termux : Dockerfile
-run:
-   termux: wget https://raw.githubusercontent.com/Ajay-o-s/termux-code-server/try/install.sh && bash install.sh
