@@ -1,5 +1,5 @@
-echo "starting pkg install wget openssl-tool proot -y "
-pkg install wget openssl-tool proot -y 
+echo "starting apt install wget openssl-tool proot -y "
+apt install wget openssl-tool proot -y 
 echo "starting hash -r"
 hash -r
 echo "starting wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh"
